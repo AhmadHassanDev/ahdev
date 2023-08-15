@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("./assets/fonts/BebasNeue.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("./assets/fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./assets/fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+body {
+  background-color: #282828;
+  color: #ffffff;
+  overflow-x: hidden !important;
+}
+
+#root {
+  overflow-x: hidden !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.noScroll {
+  width: 100% !important;
+  overflow: hidden !important;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+  display: none;
+}
+
+.bm-burger-bars {
+  background: #0f172a;
+}
+
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  display: none;
+  pointer-events: none;
+}
+
+.bm-cross {
+  display: none;
+  background: #bdc3c7;
+  pointer-events: none;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+.bm-menu {
+  background: #282828;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  width: 100% !important;
+}
+
+.bm-morph-shape {
+  fill: #282828;
+}
+
+.bm-item-list {
+  color: #ffffff;
+  padding: 0.8em;
+  width: 100%;
+  text-align: left;
+  position: static !important;
+}
+
+.bm-item {
+  display: inline-block;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  user-select: none !important;
+  pointer-events: none !important;
+}
+
+.heroImg {
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea::-webkit-input-placeholder {
+  padding-top: 10px;
+}
+
+textarea {
+  padding-top: 14px;
+
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-40px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-40px);
+  }
+}
